@@ -158,7 +158,7 @@ class HomeScreen extends StatelessWidget {
             ),
             const SizedBox(height: 10),
             GestureDetector(
-              onTap: () => _launchURL('https://github.com/DarinelGuillen/phone_app'),
+              onTap: () => _launchURL('https://github.com/AngelMerlinO/Merlin-APP-'),
               child: const Text(
                 'Repositorio Act.2',
                 style: TextStyle(
