@@ -4,6 +4,8 @@ import 'package:http/http.dart' as http;
 import 'dart:convert';
 import 'package:flutter/material.dart';
 
+import 'package:phone_app/screen/chatbot.dart';
+
 void main() {
   runApp(const MyApp());
 }
@@ -28,6 +30,7 @@ class MyApp extends StatelessWidget {
   }
 }
 
+
 class MainScreen extends StatefulWidget {
   const MainScreen({super.key});
 
@@ -42,6 +45,7 @@ class _MainScreenState extends State<MainScreen> {
     const HomeScreen(),
     const CounterScreen(),
     const RickAndMortyScreen(),
+    const ChatbotPage(), // Agrega la pantalla del chatbot aquí
   ];
 
   void _onTabSelected(int index) {
@@ -66,6 +70,10 @@ class _MainScreenState extends State<MainScreen> {
           BottomNavigationBarItem(
             icon: Icon(CupertinoIcons.cloud_download),
             label: 'R&M',
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(CupertinoIcons.chat_bubble_text),
+            label: 'Chatbot', // Nueva pestaña para el chatbot
           ),
         ],
         activeColor: CupertinoColors.systemGreen,
